@@ -35,7 +35,7 @@ export default function Home() {
 
   return (
     <Main className="font-manrope bg-blue-dark-main grid place-items-center px-4">
-      <Container className="relative bg-blue-dark-grayish w-full max-w-[540px] min-h-[315px] md:min-h-[332px] px-6 py-10 md:p-12 rounded-[10px] flex flex-col items-center gap-6 font-extrabold text-center">
+      <Container className="relative bg-blue-dark-grayish w-full max-w-[540px] min-h-[315px] md:min-h-[332px] px-6 py-10 md:p-12 rounded-[10px] md:rounded-[15px] flex flex-col items-center gap-6 font-extrabold text-center">
         <h1 className="text-green-neon  text-[11px] tracking-[3.46px] md:heading">ADVICE #{advice?.id}</h1>
         <p className="text-cyan-light text-[24px] md:quote">"{advice?.advice}"</p>
         <img src={renderImageDivider()} alt="Pattern Divider" className="md:mt-4" />
