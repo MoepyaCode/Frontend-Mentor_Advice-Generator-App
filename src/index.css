@@ -1,6 +1,18 @@
 /* Add Google fonts below */
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+
+    .heading {
+        @apply font-extrabold text-[13px] tracking-[4.09px]
+    }
+
+    .quote {
+        @apply font-extrabold text-[28px] -tracking-[0.3px]
+    }
+
+}
