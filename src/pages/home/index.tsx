@@ -35,12 +35,12 @@ export default function Home() {
 
   return (
     <Main className="font-manrope bg-blue-dark-main grid place-items-center px-4">
-      <Container className="relative bg-blue-dark-grayish w-full max-w-[540px] min-h-[315px] md:min-h-[332px] px-6 py-10 md:p-12 rounded-[10px] md:rounded-[15px] flex flex-col items-center gap-6 font-extrabold text-center">
+      <Container className="relative bg-blue-dark-grayish w-full max-w-[540px] min-h-[315px] md:min-h-[332px] px-6 py-10 md:p-12 rounded-[10px] md:rounded-[15px] flex flex-col items-center gap-6 font-extrabold text-center shadow-[30px_50px_80px_0_rgba(0,0,0,.1002)]">
         <h1 className="text-green-neon  text-[11px] tracking-[3.46px] md:heading">ADVICE #{advice?.id}</h1>
         <p className="text-cyan-light text-[24px] md:quote">"{advice?.advice}"</p>
         <img src={renderImageDivider()} alt="Pattern Divider" className="md:mt-4" />
 
-        <button onClick={handleClick} className="absolute -bottom-[calc(64px/2)] w-[64px] aspect-square bg-green-neon grid place-items-center rounded-full ">
+        <button onClick={handleClick} className="absolute -bottom-[calc(64px/2)] w-[64px] aspect-square bg-green-neon grid place-items-center rounded-full hover:shadow-[0_0_40px_0_rgba(83,255,170,1)] transition duration-300 ease-in-out">
           <img src={assets.iconDice} alt="Icon Dice" className="w-6 h-6" />
         </button>
       </Container>
